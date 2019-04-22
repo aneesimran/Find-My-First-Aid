@@ -13,6 +13,7 @@ An Android application that helps users locate their nearest first-aid kit, by i
 
 # Running code via Android Studio
 1. Connect Android device to the PC via USB
+
 a. On the smartphone device go to settings
 b. About Phone
 c. Tap Android build several times
