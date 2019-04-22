@@ -13,11 +13,11 @@ An Android application that helps users locate their nearest first-aid kit, by i
 
 # Running code via Android Studio
 1. Connect Android device to the PC via USB
-1a. On the smartphone device go to settings
-1b. About Phone
-1c. Tap Android build several times
-1d. Go to developer options 
-1e. Enable USB Debugging
+a. On the smartphone device go to settings
+b. About Phone
+c. Tap Android build several times
+d. Go to developer options 
+e. Enable USB Debugging
 2. Press the play icon on the top right on Android Studio
 3. Choose either your connected Android device or a virtual phone
 
