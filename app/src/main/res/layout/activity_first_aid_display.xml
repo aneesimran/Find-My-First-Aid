@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.FirstAidDisplayActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/uploadColour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uploadDay"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="-160dp"
+        app:srcCompat="@drawable/greenandroid" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:srcCompat="@color/buttonWhite" />
+
+    <ImageView
+        android:id="@+id/cameraOutputDisplay"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@android:color/holo_blue_light" />
+
+    <Button
+        android:id="@+id/directBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstaidcontents"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="Directions" />
+
+    <TextView
+        android:id="@+id/firstaidcontents"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_below="@id/firstaidTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:text="FirstAidcontents" />
+
+    <TextView
+        android:id="@+id/firstaidTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cameraOutputDisplay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Aid Name"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/uploadDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/directBtn"
+        android:text="Days" />
+
+    <ImageButton
+        android:id="@+id/upvoteBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/directBtn"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/uploadDay"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/upvotearrow" />
+
+    <ImageButton
+        android:id="@+id/downvoteBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/directBtn"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="60dp"
+        android:layout_toLeftOf="@id/uploadDay"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/downvotearrow" />
+
+    <TextView
+        android:id="@+id/upvoteAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="upvotes"
+        android:layout_toRightOf="@id/uploadDay"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/directBtn"/>
+
+    <TextView
+        android:id="@+id/downvoteAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="downvotes"
+        android:layout_toLeftOf="@id/uploadDay"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/directBtn"/>
+
+    <TextView
+        android:id="@+id/FirstAidContentsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstaidTitle"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="40dp"
+        android:text="First Aid Contains:" />
+
+    <TextView
+        android:id="@+id/descAns"
+        android:layout_width="335dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/firstaidTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_view"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="Description"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:id="@+id/locationAns"
+        android:layout_width="335dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/firstaidTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/border_view"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="Location"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:id="@+id/descTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstaidTitle"
+        android:layout_marginLeft="60dp"
+        android:background="@color/backgroundWhite"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Description"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/locationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstaidTitle"
+        android:layout_marginLeft="60dp"
+        android:background="@color/backgroundWhite"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="100dp"
+        android:text="Location"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>

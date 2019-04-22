@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "584976275411",
+    "firebase_url": "https://mapstest1-222018.firebaseio.com",
+    "project_id": "mapstest1-222018",
+    "storage_bucket": "mapstest1-222018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584976275411:android:c16acd0470703681",
+        "android_client_info": {
+          "package_name": "anees.firstaidkitfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "584976275411-rjf7uhj8lutp9hlhnv4qks818us2igri.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "anees.firstaidkitfinder",
+            "certificate_hash": "fa3a60e3e1a48b668ac85b760b9202029b95b633"
+          }
+        },
+        {
+          "client_id": "584976275411-0ac542kms99ecregjj00kie8kuj6jvan.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3rdqOm3hVv5q5muKIoVoljsPP1eYd0Ek"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "584976275411-0ac542kms99ecregjj00kie8kuj6jvan.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

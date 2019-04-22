@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="anees.firstaidkitfinder">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Find My First Aid"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".UI.MapActivityList"
+            android:label="List View"
+            android:screenOrientation="portrait" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD_N--ytx6qCgMxguNTy_V4LwQ1e8pe76o" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="anees.firstaidkitfinder.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".ViewDatabase" />
+        <activity
+            android:name=".UI.MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MapActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.loginPage"
+            android:configChanges="orientation"
+            android:label="Find My First Aid"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.registerPage"
+            android:configChanges="orientation"
+            android:label="Register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.forgotPasswordActivity"
+            android:configChanges="orientation"
+            android:label="Forgotten Password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.AddFirstAidActivity"
+            android:configChanges="orientation"
+            android:label="Add First Aid Kit"
+            android:screenOrientation="portrait" />
+        <activity android:name=".firstAidInformation" />
+        <activity
+            android:name=".UI.FirstAidDisplayActivity"
+            android:configChanges="orientation"
+            android:label="View Aid"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

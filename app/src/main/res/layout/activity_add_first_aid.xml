@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.AddFirstAidActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <Button
+        android:id="@+id/saveAidBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="16dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cancelBtn"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/saveAidBtn" />
+
+    <EditText
+        android:id="@+id/descField"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/border_view"
+        android:ems="10"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:hint="Enter Description"
+        android:imeOptions="actionDone"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textAlignment="textStart"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/locateField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupAdd" />
+
+
+    <EditText
+        android:id="@+id/locateField"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="308dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/border_view"
+        android:ems="10"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:hint="Location (e.g. first floor on the right)"
+        android:imeOptions="actionDone"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textAlignment="textStart"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/cameraBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:background="@color/test"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imageplaceholdercamera" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="43dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/glovesBox"
+        app:layout_constraintStart_toStartOf="@+id/descField"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="178dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/firstaidradio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="radioCheck"
+            android:paddingRight="40dp"
+            android:text="First Aid Kit" />
+
+        <RadioButton
+            android:id="@+id/defibrillatorradio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="true"
+
+            android:onClick="radioCheck"
+            android:text="Defibrillator" />
+    </RadioGroup>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <CheckBox
+        android:id="@+id/plasterBox"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="9dp"
+        android:text="Plasters"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="@+id/bandagesBox"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <CheckBox
+        android:id="@+id/bandagesBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bandages"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/plasterBox" />
+
+    <CheckBox
+        android:id="@+id/glovesBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gloves"
+        app:layout_constraintStart_toStartOf="@+id/bandagesBox"
+        app:layout_constraintTop_toBottomOf="@+id/bandagesBox" />
+
+    <CheckBox
+        android:id="@+id/eyepadsBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eye Pads"
+        app:layout_constraintStart_toStartOf="@+id/glovesBox"
+        app:layout_constraintTop_toBottomOf="@+id/glovesBox" />
+
+    <CheckBox
+        android:id="@+id/safetypinsBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Safety Pins"
+        app:layout_constraintBottom_toTopOf="@+id/dressingsLBox"
+        app:layout_constraintStart_toStartOf="@+id/dressingsLBox" />
+
+    <CheckBox
+        android:id="@+id/dressingsLBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dressings (L)"
+        app:layout_constraintBottom_toTopOf="@+id/dressingsMBox"
+        app:layout_constraintStart_toStartOf="@+id/dressingsMBox" />
+
+    <CheckBox
+        android:id="@+id/dressingsMBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:text="Dressings (M)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/eyepadsBox" />
+
+    <CheckBox
+        android:id="@+id/wipesBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wet Wipes"
+        app:layout_constraintBottom_toTopOf="@+id/safetypinsBox"
+        app:layout_constraintStart_toStartOf="@+id/safetypinsBox" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="15dp"
+        android:text="First Aid Contents:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locateField" />
+
+
+</android.support.constraint.ConstraintLayout>

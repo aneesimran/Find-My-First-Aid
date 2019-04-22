@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <ImageView
+        android:id="@+id/backgroundLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/loginbackground" />
+
+    <Button
+        android:id="@+id/btnAccept"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundedbuttons"
+        android:text="Agree"
+        android:layout_marginTop="90dp"
+        android:layout_below="@id/disclaimerDesc"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="80dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="619dp" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/disclaimerDesc"
+        android:backgroundTint="#ff1744"
+        android:textColor="@color/backgroundWhite"
+        android:text="Decline"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/roundedbuttons"
+        tools:layout_editor_absoluteX="226dp"
+        tools:layout_editor_absoluteY="619dp" />
+
+    <TextView
+        android:id="@+id/desclaimerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disclaimer"
+        android:textColor="@color/backgroundWhite"
+        android:fontFamily="sans-serif-light"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <TextView
+        android:id="@+id/disclaimerDesc"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desclaimerTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_view"
+        android:fontFamily="sans-serif-light"
+        android:lineSpacingExtra="11sp"
+        android:padding="30dp"
+        android:text="In the case of major incidents, please contact 999 as soon as possible. This application should not be the first priority in emergency situations, it may be useful while awaiting for emergency services. Caution is advised, measures have been set up in the application to help minimise incorrect posts or first aid kit that are no longer available."
+        android:textAlignment="center"
+        android:textColor="@color/backgroundWhite"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="212dp" />
+</RelativeLayout>
