@@ -42,7 +42,8 @@ An Android application that helps users locate their nearest first-aid kit, by i
 # Testing
 
 Login Details:
-aneesimran@outlook.com
+testing@findmyfirstaid.com
+qmul123
 
 
 Adding a Fist Aid Kit:
