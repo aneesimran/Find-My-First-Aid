@@ -40,3 +40,28 @@ An Android application that helps users locate their nearest first-aid kit, by i
 3. Open the APK file and install
 
 # Testing
+
+Login Details:
+aneesimran@outlook.com
+
+
+Adding a Fist Aid Kit:
+1. Once logged in, and accepted the disclaimer then press the "+" button on the main screen
+
+2. Press the camera icon and take a picture of anything around you
+
+3. Enter any text in the location field
+
+4. Image editor will appear, crop and rotate as you desire and press ok
+
+5. You will be taken back to the map screen and a pin point will appear
+
+
+Viewing a First Aid Kit:
+1. Press the pinpoint that just appeared
+
+2. The information that you added will appear 
+
+3. downvote or upvote and the total number will iterate
+
+4. Press direction button and directions / routes will appear
